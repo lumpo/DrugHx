@@ -16,7 +16,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	sliderDose1.change = function sliderDose1_change (event)// @startlock
 	{// @endlock
-		var dd1= this.drugDose1;
+		var dd1= this.sliderDose1;
 		//CODE HERE  if the value is >0 then show a tick mark or show the databox
 		if (dd1 > 0)
 		{
@@ -37,7 +37,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 //ONLY USEFUL IN v10
 	button3.click = function button3_click (event)// @startlock
 	{// @endlock
-$$("tick1").show();
+$$("tick2").show();
 
 	};// @lock
 
@@ -67,81 +67,81 @@ $$("tick1").show();
 	comboboxRxName.change = function comboboxRxName_change (event)// @startlock
 	{// @endlock
 	var rx1a = $$('comboboxRxName').getValue();
-
+alert('risperidone switch');
  	//document.getElementById("myVars").innerHTML = rx1a;
- 	 switch (rx1a) {
- 	 case "Haloperidol":
- 	 case "Risperidone":
- 	 case "Trifluoperazine":
- 	 case "Thiothixene":
- 	 case "Paliperidone":
-
- 	    $$('sliderDose1').max('20');
- 	    $$('sliderDose1').smallStep('0.5');
- 	    $$('sliderDose1').largeStep('5');
- 	     break;
- 	case "Olanzapine":
- 	case "Asenapine":
- 	case "Aripiprazole":
- 	    $$('sliderDose1').max('40');
- 	    $$('sliderDose1').smallStep('2.5');
- 	    $$('sliderDose1').largeStep('5');
- 	     break;
- 	 case "Clozapine":
- 	 case "Quetiapine":
- 	 case "Chlorpromazine":
- 	case "Amisulpride":
- 		$$('sliderDose1').max('1200');
- 	    $$('sliderDose1').smallStep('25');
- 	    $$('sliderDose1').largeStep('200');
- 	   break;
-	     case "RLAI":
-	     case "PLAI":
-	     case "Fluphenazine decanoate":
-	     $$('sliderDose1').max('150');
-	     $$('sliderDose1').smallStep('12.5');
-	     $$('sliderDose1').largeStep('25');
- 	 	//$$('sliderDose1').tickPlacement('bottomRight');
-	break;
-	     case "Zuclopentixol decanoate":
-	     case "Haloperidol decanoate":
-	     
-	     $$('sliderDose1').max('600');
-	     $$('sliderDose1').smallStep('25');
-	     $$('sliderDose1').largeStep('250');
-	     break;
-	     
-	     case "Ziprasidone":
-	     case "Flupentixol decanoate":
-	    
-	     $$('sliderDose1').max('200');
-	     $$('sliderDose1').smallStep('10');
-	     $$('sliderDose1').largeStep('100');
-	     var d1 = $$('slider1Val1').getValue();
-	     $$('sliderDose1').value(d1);
-	     
-		$$('sliderDose2').max('200');
-	     $$('sliderDose2').smallStep('10');
-	     $$('sliderDose2').largeStep('100');
-	    var d2 = $$('slider1Val2').getValue();
-	     $$('sliderDose2').value(d2);
-	     break;
-	     
-	     case "OLAI":
-	     $$('sliderDose1').min('0');
-	     $$('sliderDose1').max('405');
-	     $$('sliderDose1').smallStep('10');
-	     $$('sliderDose1').largeStep('100');
-	     break;
-	     case "ALAI":
-	     $$('sliderDose1').max('400');
-	     $$('sliderDose1').smallStep('100');
-	     $$('sliderDose1').largeStep('100');
-	     break;
-	     default:
-	     alert('No matching antipsychotic found');
-	     break;
-	     }
+// 	 switch (rx1a) {
+// 	 case "Haloperidol":
+// 	 case "Risperidone":
+// 	 case "Trifluoperazine":
+// 	 case "Thiothixene":
+// 	 case "Paliperidone":
+//	
+// 	    $$('sliderDose1').max('20');
+// 	    $$('sliderDose1').smallStep('0.5');
+// 	    $$('sliderDose1').largeStep('5');
+// 	     break;
+// 	case "Olanzapine":
+// 	case "Asenapine":
+// 	case "Aripiprazole":
+// 	    $$('sliderDose1').max('40');
+// 	    $$('sliderDose1').smallStep('2.5');
+// 	    $$('sliderDose1').largeStep('5');
+// 	     break;
+// 	 case "Clozapine":
+// 	 case "Quetiapine":
+// 	 case "Chlorpromazine":
+// 	case "Amisulpride":
+// 		$$('sliderDose1').max('1200');
+// 	    $$('sliderDose1').smallStep('25');
+// 	    $$('sliderDose1').largeStep('200');
+// 	   break;
+//	     case "RLAI":
+//	     case "PLAI":
+//	     case "Fluphenazine decanoate":
+//	     $$('sliderDose1').max('150');
+//	     $$('sliderDose1').smallStep('12.5');
+//	     $$('sliderDose1').largeStep('25');
+// 	 	//$$('sliderDose1').tickPlacement('bottomRight');
+//	break;
+//	     case "Zuclopentixol decanoate":
+//	     case "Haloperidol decanoate":
+//	     
+//	     $$('sliderDose1').max('600');
+//	     $$('sliderDose1').smallStep('25');
+//	     $$('sliderDose1').largeStep('250');
+//	     break;
+//	     
+//	     case "Ziprasidone":
+//	     case "Flupentixol decanoate":
+//	    
+//	     $$('sliderDose1').max('200');
+//	     $$('sliderDose1').smallStep('10');
+//	     $$('sliderDose1').largeStep('100');
+//	     var d1 = $$('slider1Val1').getValue();
+//	     $$('sliderDose1').value(d1);
+//	     
+//		$$('sliderDose2').max('200');
+//	     $$('sliderDose2').smallStep('10');
+//	     $$('sliderDose2').largeStep('100');
+//	    var d2 = $$('slider1Val2').getValue();
+//	     $$('sliderDose2').value(d2);
+//	     break;
+//	     
+//	     case "OLAI":
+//	     $$('sliderDose1').min('0');
+//	     $$('sliderDose1').max('405');
+//	     $$('sliderDose1').smallStep('10');
+//	     $$('sliderDose1').largeStep('100');
+//	     break;
+//	     case "ALAI":
+//	     $$('sliderDose1').max('400');
+//	     $$('sliderDose1').smallStep('100');
+//	     $$('sliderDose1').largeStep('100');
+//	     break;
+//	     default:
+//	     alert('No matching antipsychotic found');
+//	     break;
+//	     }
 	 
 	};// @lock
  

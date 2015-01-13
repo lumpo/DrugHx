@@ -7,8 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
         <meta name="WAF.packageJson"/>
         <meta name="WAF.catalog" content="Demographics,Drugs"/>
-        <meta name="wakanda-version" content="9 build 9.172967"/>
-        <meta name="wakanda-build" content="9.172967"/>
+        <meta name="wakanda-version" content="10 build 10.176317"/>
+        <meta name="wakanda-build" content="10.176317"/>
         <meta name="WAF.config.loadCSS" id="waf-interface-css" content="styles/index.css"/>
         <meta name="WAF.config.loadCSS" id="waf-project-css" content="/application.css"/>
         <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="demographics.drugshx" data-lib="WAF" data-id="drugshx" data-dataType="string" data-autoLoad="true" content="drugshx"/>
@@ -51,7 +51,7 @@
                 <div id="dataGrid1" data-type="dataGrid" data-selection-mode="single" data-role="grid14pt" data-readOnly="true" data-lib="WAF" data-label-position="top" data-label="" data-footer-text="item(s)" data-display-error="true" data-constraint-top="true" data-constraint-right="true" data-constraint-left="true" data-constraint-bottom="false" data-column="[{'sourceAttID':'ID','colID':'ID','format':'%23%23%23','width':'60','title':'ID'},{'sourceAttID':'drugName1','colID':'drugName1','width':'150','title':'drugName1'},{'sourceAttID':'drugDose1','colID':'drugDose1','width':'90','title':'Dose1'},{'sourceAttID':'drugFreq1','colID':'drugFreq1','format':'l','width':'65','title':'Freq1'},{'sourceAttID':'dailyDose1','colID':'dailyDose1','width':'75','title':'Daily1r'},{'sourceAttID':'startDate1','colID':'startDate1','format':'M%20dd%2C%20yy','width':'100','title':'start1'},{'sourceAttID':'endDate1','colID':'endDate1','format':'M%20dd%2C%20yy','width':'100','title':'end1'},{'sourceAttID':'days1','colID':'days1','format':'%23%23%23','width':'60','title':'days1','readOnly':'true'},{'sourceAttID':'drugFreq2','colID':'drugFreq2','format':'l','width':'65','title':'Freq2'},{'sourceAttID':'drugDose2','colID':'drugDose2','width':'90','title':'Dose2'},{'sourceAttID':'startDate2','colID':'startDate2','format':'M%20dd%2C%20yy','width':'100','title':'Start2'},{'sourceAttID':'endDate2','colID':'endDate2','format':'M%20dd%2C%20yy','width':'90','title':'End2'},{'sourceAttID':'days2','colID':'days2','format':'%23%23%23','width':'60','title':'Days2','readOnly':'true'},{'sourceAttID':'startDate3','colID':'startDate3','format':'M%20dd%2C%20yy','width':'90','title':'Start3'},{'sourceAttID':'endDate3','colID':'endDate3','format':'M%20dd%2C%20yy','width':'90','title':'End3'},{'sourceAttID':'days3','colID':'days3','format':'%23%23%23','width':'60','title':'Days3','readOnly':'true'}]" data-binding="drugshx" class="waf-widget waf-dataGrid waf-role-grid14pt"></div>
             </div>
             <div id="container9" data-type="container" data-linked-tag="tabDrugEntry" data-lib="WAF" data-label-position="top" data-label="" data-context="['protected','allowDrop','allowBind','allowPaste']" data-constraint-top="true" data-constraint-right="true" data-constraint-left="true" data-constraint-bottom="true" class="waf-widget waf-container waf-container-level-0 waf-level-0 waf-tabView-container-level-0">
-                <div id="comboboxRxName" data-type="combobox" data-limit="40" data-lib="WAF" data-label-position="left" data-label="drugName1" data-editable="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding-out="drugshx.drugName1" data-autoDispatch="true" class="waf-widget waf-combobox"><select></select></div>
+                <div id="comboboxRxName" data-type="combobox" data-limit="40" data-lib="WAF" data-label-position="left" data-label="drugName1" data-editable="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding-out="drugshx.drugName1" data-autoDispatch="true" class="waf-widget waf-combobox" data-binding="drugshx" data-binding-options="[drugName1] " data-binding-key="ID"><select><option value="">[drugName1] </option></select></div>
                 <label id="label17" for="comboboxRxName" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label waf-label-combobox">drugName1</label>
                 <button id="buttonNewDrug" data-type="button" data-text="New" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="drugshx" data-action="create" class="waf-widget waf-button"></button>
                 <button id="button4" data-type="button" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="drugshx" data-action="save" class="waf-widget waf-button"></button>
@@ -68,84 +68,9 @@
                                 <input type="text" id="textField43" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="end1" data-format="dd M, yy" data-datapicker-on="true" data-datapicker-icon-only="true" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="drugshx.endDate1" class="waf-widget waf-textField"/>
                                 <label id="label55" for="textField43" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label waf-label-textfield">end1</label>
                                 <div id="slider1Val1" data-type="richText" data-target="_blank" data-plainText="false" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="drugshx.drugDose1" data-autoWidth="false" class="waf-widget waf-richText">Mg/dose</div>
-                                <div id="comboboxFreq1" data-type="combobox" data-limit="20" data-lib="WAF" data-label-position="left" data-label="Freq1" data-editable="true" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding-out="drugshx.drugFreq1" data-autoDispatch="true" class="waf-widget waf-combobox"><select></select></div>
+                                <div id="comboboxFreq1" data-type="combobox" data-limit="20" data-lib="WAF" data-label-position="left" data-label="Freq1" data-editable="true" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding-out="drugshx.drugFreq1" data-autoDispatch="true" class="waf-widget waf-combobox" data-binding="drugshx" data-binding-options="[drugFreq1] " data-binding-key="ID"><select><option value="">[drugFreq1] </option></select></div>
                                 <label id="label56" for="comboboxFreq1" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-right="false" data-constraint-bottom="false" class="waf-widget waf-label waf-label-combobox">Freq1</label>
-                                <div id="sliderDose1" data-type="WakendoSlider" data-smallstep="25" data-showbuttons="false" data-package="WakendoSlider" data-max="1250" data-largestep="250" data-label="Dose1" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding-value="drugshx.drugDose1" class="waf-widget waf-WakendoSlider waf-widget waf-widget waf-widget waf-widget waf-widget waf-widget waf-wakendoslider">
-                                    <div class="k-widget k-slider k-slider-horizontal k-state-default">
-                                        <div class="k-slider-wrap">
-                                            <ul class="k-reset k-slider-items">
-                                                <li title="0" style="width: 2px; " role="presentation" class="k-tick k-first k-tick-large">
-                                                    <span class="k-label">0</span>
-                                                </li>
-                                                <li title="25" style="width: 5px; " role="presentation" class="k-tick"> </li>
-                                                <li title="50" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="75" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="100" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="125" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="150" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="175" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="200" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="225" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="250" style="width: 4px; line-height: 4px; " role="presentation" class="k-tick k-tick-large">
-                                                    <span class="k-label">250</span>
-                                                </li>
-                                                <li title="275" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="300" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="325" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="350" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="375" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="400" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="425" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="450" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="475" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="500" style="width: 4px; line-height: 4px; " role="presentation" class="k-tick k-tick-large">
-                                                    <span class="k-label">500</span>
-                                                </li>
-                                                <li title="525" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="550" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="575" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="600" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="625" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="650" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="675" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="700" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="725" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="750" style="width: 4px; line-height: 4px; " role="presentation" class="k-tick k-tick-large">
-                                                    <span class="k-label">750</span>
-                                                </li>
-                                                <li title="775" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="800" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="825" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="850" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="875" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="900" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="925" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="950" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="975" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="1,000" style="width: 4px; line-height: 4px; " role="presentation" class="k-tick k-tick-large">
-                                                    <span class="k-label">1,000</span>
-                                                </li>
-                                                <li title="1,025" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="1,050" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="1,075" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="1,100" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="1,125" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="1,150" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="1,175" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="1,200" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="1,225" style="width: 4px; " role="presentation" class="k-tick"> </li>
-                                                <li title="1,250" style="width: 2px; " role="presentation" class="k-tick k-last k-tick-large">
-                                                    <span class="k-label">1,250</span>
-                                                </li>
-                                            </ul>
-                                            <div class="k-slider-track">
-                                                <div style="width: 0px; " class="k-slider-selection"></div>
-                                                <a title="drag" tabindex="0" style="left: -13px; " role="slider" href="#" data-role="draggable" class="k-draghandle" aria-valuenow="0" aria-valuemin="0" aria-valuemax="1250">Drag</a>
-                                            </div>
-                                            <input type="text" style="display: none; " data-role="slider"/>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div id="sliderDose1" data-type="WakendoSlider" data-smallstep="25" data-showbuttons="false" data-package="WakendoSlider" data-max="1250" data-largestep="250" data-label="Dose1" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding-value="drugshx.drugDose1" class="waf-widget waf-WakendoSlider waf-widget waf-widget waf-widget waf-widget waf-widget waf-widget waf-wakendoslider" style="cursor: move; " data-min="0" data-orientation="horizontal"><div class="k-widget k-slider k-slider-horizontal k-state-default"><div class="k-slider-wrap"><div class="k-slider-track"><div class="k-slider-selection" style="width: 0px; "></div><a href="#" class="k-draghandle" title="drag" role="slider" aria-valuemin="0" aria-valuemax="1250" aria-valuenow="0" tabindex="0" style="left: 0px; " data-role="draggable">Drag</a></div><input type="text" data-role="slider" style="display: none; "/></div></div></div>
                                 <label id="label9" for="sliderDose1" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label waf-label-wakendoslider">Dose1</label>
                                 <input type="text" id="textField5" data-type="textField" data-role="txtBox-14pt-violet" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="top" data-label="dailyDose1" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="drugshx.dailyDose1" class="waf-widget waf-textField waf-role-txtBox-14pt-violet"/>
                                 <label id="label10" for="textField5" data-valign="middle" data-type="label" data-role="txtBox-14pt-violet" data-margin="5" data-lib="WAF" data-constraint-right="false" data-constraint-bottom="false" class="waf-widget waf-label waf-role-txtBox-14pt-violet waf-label-textfield">dailyDose1</label>
@@ -165,17 +90,7 @@
                                 <div id="richText5" data-type="richText" data-target="_blank" data-plainText="false" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="drugshx.drugDose2" data-autoWidth="true" class="waf-widget waf-richText">Mg/dose</div>
                                 <div id="combobox2" data-type="combobox" data-limit="20" data-lib="WAF" data-label-position="left" data-label="Freq2" data-editable="true" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding-out="drugshx.drugFreq2" data-autoDispatch="true" class="waf-widget waf-combobox"><select></select></div>
                                 <label id="label19" for="combobox2" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-right="false" data-constraint-bottom="false" class="waf-widget waf-label waf-label-combobox">Freq2</label>
-                                <div id="sliderDose2" data-type="WakendoSlider" data-smallstep="25" data-showbuttons="false" data-package="WakendoSlider" data-max="1000" data-largestep="200" data-label="Dose 2" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding-value="drugshx.drugDose2" class="waf-widget waf-WakendoSlider waf-widget waf-wakendoslider">
-                                    <div class="k-widget k-slider k-slider-horizontal k-state-default">
-                                        <div class="k-slider-wrap">
-                                            <div class="k-slider-track">
-                                                <div style="width: 0px; " class="k-slider-selection"></div>
-                                                <a title="drag" tabindex="0" style="left: 0px; " role="slider" href="#" data-role="draggable" class="k-draghandle" aria-valuenow="0" aria-valuemin="0" aria-valuemax="1000">Drag</a>
-                                            </div>
-                                            <input type="text" style="display: none; " data-role="slider"/>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div id="sliderDose2" data-type="WakendoSlider" data-smallstep="25" data-showbuttons="false" data-package="WakendoSlider" data-max="1000" data-largestep="200" data-label="Dose 2" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding-value="drugshx.drugDose2" class="waf-widget waf-WakendoSlider waf-widget waf-wakendoslider" style="cursor: move; " data-min="0" data-orientation="horizontal"><div class="k-widget k-slider k-slider-horizontal k-state-default"><div class="k-slider-wrap"><div class="k-slider-track"><div class="k-slider-selection" style="width: 0px; "></div><a href="#" class="k-draghandle" title="drag" role="slider" aria-valuemin="0" aria-valuemax="1000" aria-valuenow="0" tabindex="0" style="left: 0px; " data-role="draggable">Drag</a></div><input type="text" data-role="slider" style="display: none; "/></div></div></div>
                                 <label id="label1" for="sliderDose2" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label waf-label-wakendoslider">Dose 2</label>
                             </div>
                         </div>
@@ -187,7 +102,7 @@
                         <div id="container12" data-type="container" data-lib="WAF" data-label-position="top" data-label="" data-context="['protected','allowDrop']" data-constraint-top="true" data-constraint-right="true" data-constraint-left="true" data-constraint-bottom="true" class="waf-widget waf-container waf-container-level-2 waf-level-2 accordion-content waf-accordion-content waf-state-collapsed"></div>
                     </div>
                 </div>
-                <div id="image1" data-type="image" data-target="_blank" data-src="/images/tick.png" data-lib="WAF" data-label-position="left" data-label="" data-fit="0" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-image"></div>
+                <div id="tick2" data-type="image" data-target="_blank" data-src="/images/tick.png" data-lib="WAF" data-label-position="left" data-label="" data-hideonload="true" data-fit="0" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-image"></div>
             </div>
         </div>
         <div style="color: white;" id="attributeNames"></div>
