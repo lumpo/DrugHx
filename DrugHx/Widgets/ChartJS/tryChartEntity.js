@@ -1,0 +1,1 @@
+﻿var chDrugAll=ds.drugs.query('*');var tDataArray=chDrugAll.drugDose1;tDataArray;
